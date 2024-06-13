@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itemization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="welcome" class="center">
+        <h1>Hello Ramzes</h1>
+    </div>
+    <div id="item-list" class="center hidden">
+        <ul>
+            <li onclick="selectItem('Door')">Door</li>
+        </ul>
+        <button onclick="printPDF()">Print</button>
+    </div>
+    <div id="item-details" class="center hidden">
+        <form id="item-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+"><br><br>
+            <label for="cost">Cost:</label>
+            <input type="number" id="cost" name="cost" required step="0.01" min="0"><br><br>
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" required min="1"><br><br>
+            <button type="button" onclick="submitItem()">Done</button>
+            <button type="button" onclick="cancelItem()">Cancel</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

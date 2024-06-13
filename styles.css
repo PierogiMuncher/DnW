@@ -1,0 +1,31 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#item-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#item-list li {
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+button {
+    margin-top: 20px;
+}
